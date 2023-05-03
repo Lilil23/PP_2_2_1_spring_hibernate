@@ -75,6 +75,12 @@ public class User {
 
    @Override
    public String toString() {
-      return "User: " + firstName + ", car: " + car.getModel() + ", series: " + car.getSeries();
+      return "User{" +
+              "id=" + id +
+              ", firstName='" + firstName + '\'' +
+              ", lastName='" + lastName + '\'' +
+              ", email='" + email + '\'' +
+              ", car=" + car.toString() +
+              '}';
    }
 }
